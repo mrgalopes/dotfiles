@@ -1,5 +1,4 @@
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 
-. ~/.asdf/plugins/java/set-java-home.zsh
-
+[ -d "~/.asdf/plugins/java" ] && . ~/.asdf/plugins/java/set-java-home.zsh

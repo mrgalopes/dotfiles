@@ -1,0 +1,24 @@
+[core]
+	editor = nvim
+	autocrlf = input
+[init]
+	defaultBranch = main
+[user]
+	email = gabriellopes@usp.br
+	name = Gabriel Lopes Rodrigues
+[alias]
+	s = status
+	st = status -sb
+	c = commit
+	cane = commit --amend --no-edit
+	co = checkout
+	cb = checkout -b
+	br = branch
+	r = rebase
+	ri = rebase -i
+	m = merge
+	ll = log --oneline
+	ps = !git push origin $(git rev-parse --abbrev-ref HEAD)
+	lg = log --all --graph --decorate --oneline --abbrev-commit
+[includeIf "gitdir:~/Code/Estagio/"]
+    path = ~/.config/git/work

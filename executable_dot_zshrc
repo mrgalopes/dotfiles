@@ -1,0 +1,49 @@
+export PATH=$HOME/lsp/elixir-lsp:$HOME/.local/bin:$JAVA_HOME/bin:$HOME/Android/Sdk/platform-tools:$HOME/programs/bin:$PATH
+export EDITOR="nvim"
+
+export GTK_IM_MODULE=ibus
+export ANDROID_SDK_ROOT=/home/gabriel/Android/Sdk
+export ANDROID_HOME=/home/gabriel/Android/Sdk
+export ELIXIR_ERL_OPTIONS="-kernel shell_history enabled"
+
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+
+setopt autocd
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias matlab14="/usr/local/MATLAB/R2014a/bin/matlab -desktop"
+alias matlab21="/usr/local/MATLAB/R2021a/bin/matlab -desktop"
+alias ls="exa"
+alias ll="exa -la"
+
+function mkcd() {
+  newdir=$1
+  mkdir $newdir && cd $newdir
+}
+
+source "$HOME/.config/zsh/asdf.zsh"
+
+source "$HOME/.config/zsh/zinit.zsh"
+
+fpath+=~/.zfunc
+
+autoload -Uz compinit
+compinit
+
+if command -v starship &> /dev/null; then
+    eval "$(starship init zsh)"
+fi
+
+# source "$HOME/.config/zsh/conda.zsh"
+
+# Activates keychain to use ssh keys
+eval "$(keychain --eval --quiet --noask id_rsa id_ed25519)"
+
+eval "$(direnv hook zsh)"
+
+eval "$(zoxide init zsh)"
+

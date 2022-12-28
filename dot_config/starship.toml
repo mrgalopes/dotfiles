@@ -1,0 +1,35 @@
+command_timeout = 500
+add_newline = false
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[username]
+show_always = true
+
+[aws]
+disabled = true
+
+[git_branch]
+symbol = "git "
+
+[package]
+symbol = "package "
+
+[java]
+symbol = "java "
+
+[python]
+symbol = "python "
+
+[elixir]
+# symbol = "elixir "
+disabled = true
+
+[custom.asdf_elixir]
+command = "asdf current elixir | awk '{print $2}'"
+detect_files = ["mix.exs"]
+format = "via [$symbol($output)]($style) "
+symbol = "elixir "
+style = "bold purple"

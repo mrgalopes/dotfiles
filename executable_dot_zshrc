@@ -30,6 +30,7 @@ function mkcd() {
 source "$HOME/.config/zsh/zinit.zsh"
 
 fpath+=~/.zfunc
+fpath+=~/.config/zsh/completions
 
 autoload -Uz compinit
 compinit

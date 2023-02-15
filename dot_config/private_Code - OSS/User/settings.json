@@ -1,0 +1,70 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.suggestSpecs": false,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": " 'Jetbrains Mono', 'Iosevka Term',  'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.formatOnSave": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["ç"],
+      "after": [";"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [";"],
+      "after": [":"]
+    },
+    {
+      "before": [":"],
+      "after": [";"]
+    }
+  ],
+  "material-icon-theme.activeIconPack": "nest",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "glassit.alpha": 255,
+  "elixir.credo.strictMode": true,
+  "elixirLS.fetchDeps": true,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "trailing",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+  "window.zoomLevel": 1,
+  "sqltools.format": {
+    "linesBetweenQueries": 2
+  },
+  "rust-analyzer.checkOnSave.command": "clippy"
+}

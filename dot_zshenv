@@ -1,2 +1,4 @@
 
 . "$HOME/.cargo/env"
+
+export TERM=tmux-256color

@@ -1,10 +1,11 @@
 [core]
 	editor = nvim
 	autocrlf = input
+	compression = 0
 [init]
 	defaultBranch = main
 [user]
-	email = gabriellopes@usp.br
+	email = gabriellopes@outlook.com
 	name = Gabriel Lopes Rodrigues
 [alias]
 	s = status

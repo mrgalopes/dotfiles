@@ -25,7 +25,7 @@ function mkcd() {
   mkdir $newdir && cd $newdir
 }
 
-source "$HOME/.config/zsh/asdf.zsh"
+# source "$HOME/.config/zsh/asdf.zsh"
 
 source "$HOME/.config/zsh/zinit.zsh"
 
@@ -41,9 +41,16 @@ fi
 # source "$HOME/.config/zsh/conda.zsh"
 
 # Activates keychain to use ssh keys
-eval "$(keychain --eval --quiet --noask id_rsa id_ed25519)"
+eval "$(keychain --eval --quiet id_ed25519)"
 
 eval "$(direnv hook zsh)"
 
 eval "$(zoxide init zsh)"
 
+eval "$(rtx activate zsh)"
+
+## fzf
+if command -v fzf &> /dev/null; then
+    source /usr/share/fzf/key-bindings.zsh
+    source /usr/share/fzf/completion.zsh
+fi

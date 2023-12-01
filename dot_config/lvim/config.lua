@@ -1,4 +1,3 @@
-
 --- Neovim Config
 -- General
 lvim.format_on_save.enabled = true
@@ -8,6 +7,9 @@ lvim.format_on_save.enabled = true
 --- Faster buffer switching
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("n", "<S-l>", ":bnext<CR>")
+
+-- Go to normal mode in the terminal
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { noremap = true })
 
 --- More LSP bindings
 lvim.builtin.which_key.mappings["lR"] = {
@@ -19,6 +21,7 @@ lvim.builtin.which_key.mappings["lu"] = {
 
 
 -- LSP
+--- To check which are not skipped: :lua print(vim.inspect(lvim.lsp.automatic_configuration.skipped_servers))
 --- Enable Emmet for html
 lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
   return server ~= "emmet_language_server"
@@ -58,6 +61,7 @@ lvim.plugins = {
     ft = "beancount"
   }
 }
+
 --- More info
 -- Read the docs: https://www.lunarvim.org/docs/configuration
 -- Example configs: https://github.com/LunarVim/starter.lvim

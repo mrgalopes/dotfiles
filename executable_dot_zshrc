@@ -1,4 +1,4 @@
-export PATH=/home/gabriel/.local/share/ponyup/bin:$HOME/lsp/elixir-lsp:$HOME/.local/bin:$JAVA_HOME/bin:$HOME/Android/Sdk/platform-tools:$HOME/programs/bin:$PATH
+export PATH=/home/gabriel/.local/share/lvim/mason/bin:/home/gabriel/.local/share/ponyup/bin:$HOME/lsp/elixir-lsp:$HOME/.local/bin:$JAVA_HOME/bin:$HOME/Android/Sdk/platform-tools:$HOME/programs/bin:$PATH
 export EDITOR="lvim"
 
 export GTK_IM_MODULE=ibus

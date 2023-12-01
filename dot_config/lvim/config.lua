@@ -9,8 +9,12 @@ lvim.format_on_save.enabled = true
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 
+--- More LSP bindings
 lvim.builtin.which_key.mappings["lR"] = {
   "<cmd>LspRestart<CR>", "Restart server"
+}
+lvim.builtin.which_key.mappings["lu"] = {
+  "<cmd>lua require('telescope.builtin').lsp_references()<CR>", "Find usages"
 }
 
 

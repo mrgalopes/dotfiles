@@ -49,6 +49,10 @@ lvim.plugins = {
     },
     ft = { "fugitive" }
   },
+  {
+    "nathangrigg/vim-beancount",
+    ft = "beancount"
+  }
 }
 --- More info
 -- Read the docs: https://www.lunarvim.org/docs/configuration
